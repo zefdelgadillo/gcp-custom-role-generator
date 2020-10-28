@@ -41,4 +41,5 @@ module "custom_role" {
 
 | Name | Description |
 |------|-------------|
-| role\_name | Custom role name |
+| id | an identifier for the resource with the format `organizations/{{org_id}}/roles/{{role_id}}` |
+| name | The name of the role in the format `organizations/{{org_id}}/roles/{{role_id}}`. Like `id`, this field can be used as a reference in other resources such as IAM role bindings. |

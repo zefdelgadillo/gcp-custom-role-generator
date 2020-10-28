@@ -18,8 +18,3 @@ resource "google_organization_iam_custom_role" "lab_user" {
   description = var.description
   permissions = local.permissions
 }
-
-output "role_name" {
-  description = "Custom role name"
-  value       = google_organization_iam_custom_role.lab_user.name
-}
